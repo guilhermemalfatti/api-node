@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "joke": "(Piada para sexta feira 13) Hoje é sexta-feira 13, cuidado! Use xml e não Json"
+    },    
+    {
+        "id": 2,
+        "joke": "Quem mais sofre nesse calor são os usuários de Mac. Eles não podem abrir Windows."
+    },
+    {
+        "id": 3,
+        "joke": "Que tipo de computador está bombando nas redes sociais? O deskTOP!"
+    },
+    {
+        "id": 4,
+        "joke": "O que uma impressora falou para a outra? Essa folha aí no chão é sua, ou é impressão minha?"
+    }
+]
