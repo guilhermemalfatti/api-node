@@ -19,9 +19,22 @@ app.listen(port, function() {
 });
 
 app.get('/joke', function(req, res) {  
-    var index = Math.floor(Math.random() * 4);
-    console.log("joke id: ", index);
-    res.send(JSON.stringify(jokes[index]));
-  });
+  var index = Math.floor(Math.random() * 4);
+  console.log("joke id: ", index);
+  res.send(JSON.stringify(jokes[index]));
+});
+
+
+app.get('/joke/:jokeid', function(req, res) {
+  console.log("joke id parameter: ", parseInt(req.params.jokeid) - 1);
+
+  var joke = JSON.stringify(jokes[parseInt(req.params.jokeid) - 1]);
+  if(joke){
+    res.send(joke);
+  }else{
+    res.send("Está piada não existe! :/");
+  }
+  
+});
 
   
